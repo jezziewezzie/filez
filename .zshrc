@@ -97,6 +97,8 @@ plugins=(git)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias vim="nvim"
+
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
@@ -108,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
 
-export TYPEWRITTEN_CURSOR="terminal"
+export TYPEWRITTEN_CURSOR="beam"
 
 autoload -Uz compinit
 compinit
