@@ -97,8 +97,6 @@ plugins=(git)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vim="nvim"
-
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
@@ -113,6 +111,9 @@ export VISUAL=nvim
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 export TYPEWRITTEN_CURSOR="beam"
+
+alias vim='nvim'
+alias ls='ls --color=auto -h -F -A'
 
 autoload -Uz compinit
 compinit
